@@ -16,7 +16,7 @@ App.AppView = Backbone.View.extend({
         var self = this;
 
         $.get('./app/templates/app-view.html', function(data) {
-/*            console.log(data);*/
+            // console.log(data);
             self.$el.html(_.template(data)());
         });
     }
