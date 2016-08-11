@@ -1,19 +1,19 @@
-define('app', [
+define('app',
+    [
+        'views/app-view',
+        'collections/articles',
+        'views/form'
+    ],
+    function(AppView, ArticlesCollection, Form) {
+        var App = {};
 
-    'views/app-view',
-    'collections/articles',
-    'views/form'
+        App.app = new AppView();
+        App.articlesCollection = new ArticlesCollection();
+        App.form = new Form();
 
-  ], function(AppView, ArticlesCollection) {
-    // console.log('AppView', AppView);
-
-    var App = App || {};
-
-    App.app = new AppView();
-    App.articlesCollection = new ArticlesCollection();
-    App.form = new Form();
-
-});
+        return App;
+    }
+);
 
 // var App = App || {};
 
