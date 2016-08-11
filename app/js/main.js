@@ -11,11 +11,23 @@ require.config({
 
 require(
     [
-        'backbone',
-        'views/module1'
+        'app',
+        // 'views/article',
+        // 'views/articles-container',
+        // 'views/articles-list',
+        // 'views/form',
+
     ],
-    function(Backbone, Module1) {
-        console.log('Backbone', Backbone);
-        console.log('Module1', Module1);
+    function(App) {
+        // console.log('Backbone', Backbone);
+        // console.log('App', App);
+
     }
+    // function(Backbone, AppView, ArticlesContainer, ArticlesList, AppForm) {
+    //     console.log('Backbone', Backbone);
+    //     console.log('AppView', AppView);
+    //     console.log('ArticlesContainer', ArticlesContainer);
+    //     console.log('ArticlesList', ArticlesList);
+    //     console.log('AppForm', AppForm);
+    // }
 );
